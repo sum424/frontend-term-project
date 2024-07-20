@@ -25,23 +25,48 @@ main {
     margin-bottom: 2%;
 }
 
-/* Article and Aside styles */
-article {
-    margin-bottom: 20px;
+/* Article and Aside class styles */
+.team-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
 }
 
-figure {
+.team-card {
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+.team-card h3 {
+    background: #241818;
+    color: white;
     margin: 0;
+    padding: 10px;
 }
 
-figure img {
-    max-width: 100%;
-    height: 550px;
-    border-radius: 15px;
+.team-card figure {
+    margin: 0;
+    padding: 20px;
 }
 
-figcaption {
+.team-card img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.team-card figcaption {
     font-style: italic;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 /* Mobile Styles */
@@ -55,16 +80,22 @@ figcaption {
     }
 }
 
-/* Tablet Styles */
-@media (min-width: 601px) and (max-width: 1024px) {
-    main {
-        padding: 15px;
+/* Grid settings for different screen sizes */
+@media (min-width: 1024px) {
+    .team-container {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* Desktop Styles */
-@media (min-width: 1025px) {
-    main {
-        padding: 20px;
+/* responsive for tablets and lower */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .team-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .team-container {
+        grid-template-columns: 1fr;
     }
 }

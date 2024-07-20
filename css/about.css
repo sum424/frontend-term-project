@@ -25,6 +25,7 @@ main {
 @media (max-width: 600px) {
     .intro, .reasons, .guarantee {
         padding: 10px;
+        margin-bottom: 20px;
     }
 }
 
