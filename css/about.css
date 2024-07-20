@@ -1,0 +1,61 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Section styles */
+main {
+    padding: 20px;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .intro, .reasons, .guarantee {
+        padding: 10px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .intro, .reasons, .guarantee {
+        padding: 15px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    .intro, .reasons, .guarantee {
+        padding: 20px;
+    }
+}
+
+/* Navigation link styles with pseudo-classes */
+a:link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0056b3;
+}
+
+a:hover {
+    color: #004085;
+}
+
+a:active {
+    color: #003057;
+}

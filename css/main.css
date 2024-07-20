@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 .header img {
@@ -20,6 +21,8 @@
 
 .header h2 {
     color: white !important;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 /* logo */
@@ -27,12 +30,11 @@
     height: 6rem !important;
 }
 
-
 /* Navbar */
 .navbar {
     background: #0d0000;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0;
     position: sticky;
     width: 100%;
     top: 0;
@@ -77,10 +79,15 @@
 }
 
 /* Parallax Section */
+.parallax {
+    position: relative;
+    text-align: center;
+}
+
 .parallax-img {
     width: 100%;
     max-height: 75vh;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .parallax h1 {
@@ -89,7 +96,8 @@
     top: 60%;
     z-index: 1;
     color: #fff;
-    font-size: 72px;
+    font-size: 4rem;
+    text-align: center;
 }
 
 .parallax a {
@@ -98,7 +106,7 @@
     top: 80%;
     z-index: 1;
     color: #fff;
-    font-size: 24px;
+    font-size: 1.5rem;
     border: 2px solid white;
     background: black;
     padding: 10px;
@@ -111,7 +119,6 @@
     background-color: white;
     transition: 0.4s all ease-in-out;
 }
-
 
 /* Content Sections */
 .content {
@@ -126,11 +133,13 @@
 
 .content h1, .content h2 {
     margin-bottom: 20px;
+    font-size: 2rem;
 }
 
 .content p {
     margin-bottom: 20px;
     line-height: 1.6;
+    font-size: 1rem;
 }
 
 /* Footer */
@@ -152,5 +161,109 @@ footer .container a {
 }
 
 footer .container a:hover {
-    color: dfdfdf;
+    color: #dfdfdf;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    /* .navbar .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    } */
+
+    .navbar .nav-links li {
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+
+    .parallax h1 {
+        font-size: 3rem;
+    }
+
+    .parallax a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: initial;
+    }
+    
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+
+    .navbar .logo {
+        margin-bottom: 20px;
+    }
+
+    .header h2 {
+        font-size: 1.2rem;
+    }
+
+    .parallax h1 {
+        font-size: 2.5rem;
+    }
+
+    .parallax a {
+        font-size: 1rem;
+    }
+
+    .content h1, .content h2 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-img {
+        height: 4..5rem !important;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .logo {
+        margin-bottom: 20px;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .header h2 {
+        font-size: 1rem;
+    }
+
+    .parallax h1 {
+        top: 50%;
+        font-size: 2rem;
+    }
+
+    .parallax a {
+        top: 70%;
+        font-size: 0.9rem;
+    }
+
+    .content h1, .content h2 {
+        font-size: 1.2rem;
+    }
+
+    .content p {
+        font-size: 0.8rem;
+    }
 }
