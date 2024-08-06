@@ -115,6 +115,32 @@ button:hover {
     margin: 0 auto;
 }
 
+/* css animations */
+.animated-text {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20vh;
+    animation: fadeColorChange 5s ease-in-out infinite;
+}
+
+@keyframes fadeColorChange {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        color: #6b4f4f; /* Initial color */
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+        color: #e1f359; /* Midway color change */
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+        color: #6b4f4f; /* Back to initial color */
+    }
+}
+
 .media h1 {
     font-size: 36px;
     text-align: center;
