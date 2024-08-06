@@ -41,6 +41,12 @@ main img {
     text-align: center;
 }
 
+.sale-item:hover {
+    cursor: pointer;
+    transition: 0.4S all ease-in-out;
+    transform: scale(1.1);
+}
+
 .sale-item img {
     max-width: 100%;
     border-radius: 10px;
