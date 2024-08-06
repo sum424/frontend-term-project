@@ -1,4 +1,4 @@
-/* STYLING */
+/* css Styles */
 
 .tabs-container {   
     margin-top: 40px !important;
@@ -11,11 +11,10 @@
     margin: 20px;
 }
 
-/* Style the tabs */
 .tabs {
     margin-bottom: 28px; 
     display: flex;
-      justify-content: space-between;
+    justify-content: space-between;
 }
 
 .tabs a {
@@ -31,7 +30,6 @@
                  -3px -3px 5px #ffffff;
 }
 
-/* Change background color of tabs on hover */
 .tabs a:hover {
     background: linear-gradient(145deg, #f4f4f4, #cecece);
     color: #888;
@@ -48,7 +46,6 @@
                 inset -3px -3px 5px #ffffff;
 }
 
-/* Style the tab content */
 .tabcontent {
     padding: 46px;
     min-height: 288px;
@@ -85,6 +82,7 @@
     cursor: pointer;
     font-size: 0.85em;
 }
+
 /* the box around the slider */
 .switch {
     position: relative;
@@ -93,6 +91,7 @@
     height: 22px;
     margin-left: 4px;
 }
+
 /* Hide default HTML checkbox */
 .switch input {
     opacity: 0;
@@ -131,6 +130,7 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(21px);
 }
+
 /* Rounded sliders */
 .slider.round {
     border-radius: 11px;
@@ -139,7 +139,7 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-
+/* responsive styles */
 @media only screen and (max-width: 600px) {
     .tabs {
         display: none;
