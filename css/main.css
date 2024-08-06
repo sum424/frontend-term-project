@@ -6,6 +6,23 @@
     scroll-behavior: smooth;
 }
 
+/* close btn */
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #6b4f4f;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+
 /* header */
 .header {
     background-color: #f8d0bf;
