@@ -67,7 +67,7 @@
 .navbar .nav-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 18px;
 }
 
 .navbar .nav-links a:hover {
@@ -195,7 +195,6 @@ footer .container a:hover {
         align-items: flex-start;
     }
     
-
     .navbar .logo {
         margin-bottom: 20px;
     }
