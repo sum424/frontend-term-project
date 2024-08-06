@@ -224,8 +224,9 @@ footer .container a:hover {
 @media (max-width: 480px) {
     .logo-img {
         height: 4..5rem !important;
+        width: 70px !important;
+        object-fit: cover;
     }
-
     .navbar .container {
         flex-direction: column;
         align-items: flex-start;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expresso Makers</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
     <!-- header -->
@@ -34,7 +35,53 @@
 
     <!-- Content Section -->
     <main>
-       
+        <section class="contact">
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <ol>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </li>
+                        <li>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                        </li>
+                        <li>
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </li>
+                        <li>
+                            <label>Gender:</label>
+                            <label><input class="input-radio" type="radio" name="gender" value="male" required> Male</label>
+                            <label><input class="input-radio" type="radio" name="gender" value="female"> Female</label>
+                            <label><input class="input-radio" type="radio" name="gender" value="other"> Other</label>
+                        </li>
+                        <li>
+                            <label for="services">Interested Services:</label>
+                            <select id="services" name="services[]" multiple>
+                                <option value="weight_training">Weight Training</option>
+                                <option value="cardio">Cardio Workouts</option>
+                                <option value="yoga">Yoga Sessions</option>
+                                <option value="hiit">High-Intensity Interval Training</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="comments">Comments:</label>
+                            <textarea id="comments" name="comments" rows="4" placeholder="Your comments"></textarea>
+                        </li>
+                        <li>
+                            <label for="newsletter">Subscribe to Newsletter:</label>
+                            <input class="input-radio" type="checkbox" id="newsletter" name="newsletter">
+                        </li>
+                    </ol>
+                </fieldset>
+                <button type="submit">Submit Request</button>
+                <button type="submit">Reset Form</button>
+            </form>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -45,5 +92,9 @@
             <a href="mailto:expressomakers@gmail.com">Request Information</a>
         </div>
     </footer>
+
+    <script>
+
+    </script>
 </body>
 </html>

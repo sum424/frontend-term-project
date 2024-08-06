@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+.logo span {
+    font-size: 24px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555;
+}
+
+#loader {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    background: url('loader.gif') no-repeat center center;
+    background-size: cover;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+}
+
+.media {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.media h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 20px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.video-item {
+    text-align: center;
+}
+
+.video-item video {
+    height: 310px;
+}
+
+.audio {
+    margin-top: 60px;
+}
+
+.audio-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.audio-section h2 {
+    font-size: 20px;
+}
+
+.audio-section audio {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .audio-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
